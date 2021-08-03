@@ -1,0 +1,36 @@
+Mongo DB
+- NoSQL Database that allows us to store data in collections and documents
+
+Collection
+- A collection of related items (documents) that we wish to store
+
+Document
+- An individual record in a collection
+- A JavaScript Object (stored in JSON format)
+
+We would have a collection of fruits
+Each fruit object would be represented by a document
+const fruits = [
+  {
+    name: 'apple', // String, required
+    color: 'red', // String, required
+    readyToEat: true // Boolean
+  },
+  {
+    name: 'watermelon',
+    color: 'green',
+    readyToEat: true
+  },
+  {
+    name: undefined,
+    color: undefined
+  }
+]
+
+Mongoose
+- ODM (Object Document Mapper)
+- The translator between our Express App and MongoDB
+
+What Does Mongoose Do For Us?
+- Create a connection to our Database
+- Validate our data - making sure all of our data has the same structure and follows certain rules
