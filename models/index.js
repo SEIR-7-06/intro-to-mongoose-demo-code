@@ -1,4 +1,4 @@
-// Connect to our Database
+// This file is responsible for connecting to our Database
 const mongoose = require('mongoose');
 
 // Get the address for the Database
