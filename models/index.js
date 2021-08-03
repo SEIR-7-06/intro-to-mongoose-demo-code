@@ -2,7 +2,6 @@
 const mongoose = require('mongoose');
 
 // Get the address for the Database
-// http://localhost:4000/fruits
 const connectionString = 'mongodb://localhost:27017/testblog';
 
 // Fire off the connection
