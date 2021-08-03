@@ -10,7 +10,7 @@ const myBlogArticles = [
     author: 'Socrates', // String, required
     body: 'We saw so many cool things!...', // String
     isPublic: true // Boolean
-  }
+  },
 ]
 
 // Schema
@@ -21,7 +21,8 @@ const blogArticleSchema = new mongoose.Schema({
   title: { type: String, required: true },
   author: { type: String, required: true },
   body: String,
-  isPublic: Boolean
+  isPublic: Boolean,
+  likes: Number
 });
 
 // Create an Blog Article model using the schema
@@ -29,3 +30,4 @@ const blogArticleSchema = new mongoose.Schema({
 const BlogArticle = mongoose.model('blogarticles', blogArticleSchema);
 
 module.exports = BlogArticle;
+
